@@ -8,13 +8,13 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <!-- 启动自动扫描 -->
-    <context:component-scan base-package="com.ccsu.*" />
+    <context:component-scan base-package="com.ccsu.*"></context:component-scan>
 
     <!-- 注册MVC注解驱动 -->
-    <mvc:annotation-driven />
+    <mvc:annotation-driven/>
 
     <!-- 静态资源可访问的设置方式 -->
-    <mvc:default-servlet-handler />
+    <mvc:default-servlet-handler></mvc:default-servlet-handler>
 
     <!-- 配置视图解析器，可以显式设置，也可以不设置，不设置会依据SpringMVC的默认设置 -->
     <bean id="viewResolver"
