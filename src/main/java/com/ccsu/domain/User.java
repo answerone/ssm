@@ -10,6 +10,7 @@ public class User implements Serializable{
 	private Integer age;
 	private String password;
 	private String mobile;
+	private String email;
 	
 	public Integer getId() {
 		return id;
@@ -46,5 +47,11 @@ public class User implements Serializable{
 	}
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 }
